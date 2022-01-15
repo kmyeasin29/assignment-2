@@ -203,24 +203,12 @@ top part Animation style
   /* ===========================
            mobile device
   ============================== */
-  @media (max-width: 480px;){
+  @media (max-width: 480px){
     .hero-section{
         flex-direction: column;
         margin-top: 20px;
     }
-    p{
-        margin-bottom: 20px;
-        font-size: 8px;
-        line-height: 15px;
-    }
-    .preebook-now{
-        background-color: #E02C6D;
-        Padding: 10px;
-        border-radius: 20px;
-        width: 80%;
-        font-weight: 200;
-    }
     .typewriter h1 {
-        font-size: 10px;
+        font-size: 14px;
       }
   }
