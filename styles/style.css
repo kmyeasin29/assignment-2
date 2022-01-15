@@ -7,7 +7,7 @@ body{
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
     font-family: 'Oswald', sans-serif;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Poppins', sans-serif;    
 }
 /* =============
 header style
@@ -45,6 +45,10 @@ hero section css
     display: flex;
     margin-top: 20px;
 }
+.main-camera img{
+    width: 440px;
+    height: 414px;
+}
 p{
     line-height: 30px;
     margin-bottom: 20px;
@@ -69,10 +73,10 @@ p{
     color: white;
 }
 /* ============================
-product area css
+products area css
 ============================ */
 .product-section{
-    margin-top: 80px;
+    margin-top: 20px;
 }
 .product-title{
     text-align: center;
@@ -110,7 +114,7 @@ product area css
 /* ==============================
 Footer section
 ============================== */
-.footer-info{
+.footer-section{
     background-color: #0a0826;
     text-align: center;
     padding: 15px;
@@ -207,8 +211,105 @@ top part Animation style
     .hero-section{
         flex-direction: column;
         margin-top: 20px;
+        justify-content: space-between;
+
+    }
+    .navigation{
+        flex-wrap: wrap;
+        align-content: center;
+        justify-content: center;
+        align-items: center;
+    }
+    body{
+        max-width: 1200px;
     }
     .typewriter h1 {
-        font-size: 14px;
+        font-size: 18px;
+        margin-bottom: 20px;
       }
+      p{
+        line-height: 20px;
+        margin-bottom: 20px;
+        font-size: 12px;
+    }
+    .preebook-now:hover{
+        background-color: green;
+        width: 130px;
+        transition: 1s;
+    }
+.product-section{
+    margin-top: 80px;
+}
+.product-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+    justify-content: space-between;
+}
+.pink{
+    color: #E02C6D;
+}
+.products{
+    grid-template-columns: repeat(1, 1fr);
+}
+.product{
+    box-shadow: 10px 10px 30px lightgray;
+    margin: 30px;
+    padding: 15px;
+    align-items: center;
+}
+.product-details{
+    font-size: 14px;
+}
+.product img{
+    width: 300px;
+    height: 256px;
+}
+.product-button{
+    text-align: right;
+    color: #E02C6D;
+}
+.product-button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+.footer-section{
+    max-width: 100%;
+}
+.box-animation{
+    max-width: 100%;
+}
+.product{
+    box-shadow: 10px 10px 30px lightgray;
+    margin: 40px;
+    padding: 15px;
+    align-items: center;
+}
+  }
+
+  /* ====================
+  Tablets
+  ==================== */
+  @media (max-width: 768px){
+    .hero-section{
+        flex-direction: column;
+        
+    }
+    .preebook-now{
+        text-align: center;
+    }
+    .typewriter h1 {
+        font-size: 18px;
+        margin-bottom: 20px;
+      }
+      p{
+        line-height: 25px;
+        margin-bottom: 20px;
+        font-size: 12px;
+        justify-content: space-between;
+
+    }
+    .products{
+        grid-template-columns: repeat(2, 1fr);
+    }
   }
