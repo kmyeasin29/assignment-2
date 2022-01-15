@@ -1,4 +1,226 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body{
     font-family: 'Oswald', sans-serif;
     font-family: 'Poppins', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
+/* =============
+header style
+============= */
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+}
+.nav-menu{
+    display: flex;
+}
+.nav-menu li{
+    list-style: none;
+    margin: 10px;
+    
+}
+.nav-menu li a{
+    text-decoration: none;
+    color: black;
+}
+.nav-menu i{
+    margin: 10px;
+}
+/* =======================
+hero section css
+========================== */
+.hero-section{
+    display: flex;
+    margin-top: 20px;
+}
+p{
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.preebook-now{
+    background-color: #E02C6D;
+    Padding: 10px 24px 10px 24px;
+    border-radius: 41px;
+    width: 196px;
+    font-weight: 500;
+}
+.preebook-now:hover{
+    background-color: green;
+    width: 250px;
+    transition: 1s;
+}
+.hero-section a{
+    text-decoration: none;
+    color: white;
+}
+.hero-section i{
+    color: white;
+}
+/* ============================
+product area css
+============================ */
+.product-section{
+    margin-top: 80px;
+}
+.product-title{
+    text-align: center;
+    font-size: 28px;
+    font-weight: 600;
+}
+.pink{
+    color: #E02C6D;
+}
+.products{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.product{
+    box-shadow: 10px 10px 30px lightgray;
+    margin: 30px;
+    padding: 15px;
+    align-items: center;
+}
+.product-details{
+    font-size: 14px;
+}
+.product img{
+    width: 300px;
+    height: 256px;
+}
+.product-button{
+    text-align: right;
+    color: #E02C6D;
+}
+.product-button a{
+    text-decoration: none;
+    color: #E02C6D;
+}
+/* ==============================
+Footer section
+============================== */
+.footer-info{
+    background-color: #0a0826;
+    text-align: center;
+    padding: 15px;
+    margin-top: 50px;
+    max-width: 100%;
+}
+.footer-info h2{
+    color: white;
+}
+.footer-info p{
+    color: white;
+    margin-top: 10px;
+}
+.social-icon{
+    color: white;
+}
+.fab{
+    margin: 10px;
+}
+/* ======================
+top part Animation style
+====================== */
+.typewriter h1 {
+    font-size: 35px;
+    overflow: hidden; 
+    white-space: nowrap; 
+    animation: typing 5s infinite;
+  }
+  
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 90% }
+  }
+  /* ====================
+  Extra pattern
+  ==================== */
+  .box-animation{
+      margin-top: 40px;
+      box-shadow: 10px 10px 50px lightgray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 50vh;
+  }
+  .box{
+      position: relative;
+      width: 300px;
+      height: 300px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgba(36, 31, 31, 0.5);
+      overflow: hidden;
+      border-radius: 20px;
+  }
+  .box::before{
+      content: '';
+      position: absolute;
+      width: 150px;
+      height: 140%;
+      background: linear-gradient(#ff019e, #000000);
+      animation: animate 1s linear infinite;
+
+  }
+  .box::after{
+      content: '';
+      position: absolute;
+      inset: 4px;
+      background-color: navy;
+      border-radius: 15px;
+
+  }
+  @keyframes animate {
+      0%{
+          transform: rotate(0deg);
+      }
+      100%{
+        transform: rotate(360deg);
+    }
+  }
+  .box h1{
+      color: blanchedalmond;
+      font-size: 10em;
+      z-index: 10;
+  }
+  /* ========================
+          media query
+  =========================== */
+
+  /* ===========================
+           mobile device
+  ============================== */
+  @media (max-width: 480px;){
+    .hero-section{
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    p{
+        margin-bottom: 20px;
+        font-size: 8px;
+        line-height: 15px;
+    }
+    .preebook-now{
+        background-color: #E02C6D;
+        Padding: 10px;
+        border-radius: 20px;
+        width: 80%;
+        font-weight: 200;
+    }
+    .typewriter h1 {
+        font-size: 10px;
+      }
+  }
